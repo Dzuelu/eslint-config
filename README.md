@@ -12,3 +12,11 @@ Also you will have to run the submodules command to pull the repo in github work
 ```
 git submodule update --init --recursive
 ```
+
+## Using the config
+Simply create a `.eslintrc.js` file with the following
+```typescript
+const defaultLint = require('./src/index.ts');
+
+module.exports = defaultLint;
+```
