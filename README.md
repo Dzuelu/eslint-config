@@ -14,9 +14,17 @@ git submodule update --init --recursive
 ```
 
 ## Using the config
-Simply create a `.eslintrc.js` file with the following
+First you need to add the following to your `devDependencies` in `package.json`
+```
+"eslint-config": "file:eslint-config"
+```
+
+
+And then create a `.eslintrc.js` file with the following
 ```typescript
-const defaultLint = require('./src/index.ts');
+const defaultLint = require('eslint-config');
 
 module.exports = defaultLint;
 ```
+
+And your done!
