@@ -20,6 +20,7 @@
     "@types/jest": "29.x",
     "@types/node": "18.x",
     "jest": "29.x",
+    "rimraf": "5.x",
     "ts-eslint-cli": "1.x",
     "typescript": "5.2.x"
   },
@@ -27,14 +28,15 @@
     "node": ">=18"
   },
   "files": [
-    "src/*"
+    "dist/*"
   ],
   "license": "MIT",
-  "main": "src/index.ts",
+  "main": "dist/src",
   "name": "@dzuelu/eslint-config",
   "private": false,
   "repository": "git@github.com:Dzuelu/discord-bot.git",
   "scripts": {
+    "build": "rimraf dist && tsc",
     "lint": "ts-eslint-cli . --ext .ts"
   },
   "version": "1.0.0"

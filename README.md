@@ -1,30 +1,24 @@
 # eslint-config
-A lint config that can be used in other projects simply
+A lint config that can be used in other projects as simply as possible
 
 ## Adding to repo
-To add to a repo, simply run the following command:
+Example with `ts-eslint-cli` plugin.
 ```
-git submodule add https://github.com/Dzuelu/eslint-config
-```
-Recommended to add to .gitignore before running that command if you have strict ignore settings.
-
-Also you will have to run the submodules command to pull the repo in github workflows or on new git clones.
-```
-git submodule update --init --recursive
+yarn add --dev ts-eslint-cli @dzuelu/eslint-config
 ```
 
-## Using the config
-First you need to add the following to your `devDependencies` in `package.json`
-```
-"eslint-config": "file:eslint-config"
-```
-
-
-And then create a `.eslintrc.js` file with the following
+Create a `.eslintrc.ts` file with the following
 ```typescript
-const defaultLint = require('eslint-config');
+import { ESLint } from 'eslint';
 
-module.exports = defaultLint;
+const config: ESLint.ConfigData = {
+  extends: ['@dzuelu']
+};
+
+export default config;
 ```
 
-And your done!
+And add the following to package.json scripts
+```
+"lint": "ts-eslint-cli . --ext .ts"
+```
