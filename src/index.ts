@@ -1,4 +1,6 @@
-module.exports = {
+import { ESLint } from 'eslint';
+
+const config: ESLint.ConfigData = {
   env: {
     es6: true,
     jest: true,
@@ -73,3 +75,5 @@ module.exports = {
     }
   }
 };
+
+export default config;
