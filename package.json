@@ -11,9 +11,10 @@
     "eslint-plugin-node": "11.x",
     "eslint-plugin-prettier": "5.x",
     "eslint-plugin-sort-keys-fix": "1.x",
-    "eslint-plugin-typescript-sort-keys": "2.x",
+    "eslint-plugin-typescript-sort-keys": "3.x",
     "prettier": "3.x",
-    "prettier-eslint": "15.x"
+    "prettier-eslint": "16.x",
+    "ts-eslint-cli": "1.x"
   },
   "devDependencies": {
     "@types/eslint": "8.x",
@@ -21,7 +22,6 @@
     "@types/node": "18.x",
     "jest": "29.x",
     "rimraf": "5.x",
-    "ts-eslint-cli": "1.x",
     "typescript": "5.2.x"
   },
   "engines": {
