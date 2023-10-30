@@ -31,13 +31,14 @@
     "dist/*"
   ],
   "license": "MIT",
-  "main": "dist/src",
-  "name": "@dzuelu/eslint-config",
+  "main": "dist/index.js",
+  "name": "dzuelu-eslint-config",
+  "description": "Common eslint config used in node, mostly for Dzuelu projects but use it if it helps ya!",
   "private": false,
   "repository": "git@github.com:Dzuelu/discord-bot.git",
   "scripts": {
     "build": "rimraf dist && tsc",
     "lint": "ts-eslint-cli . --ext .ts"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
