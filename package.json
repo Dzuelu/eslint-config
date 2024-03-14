@@ -13,9 +13,9 @@
     "eslint-plugin-sort-keys-fix": "1.x",
     "eslint-plugin-typescript-sort-keys": "3.x",
     "prettier": "3.x",
-    "prettier-eslint": "16.x",
-    "ts-eslint-cli": "1.x"
+    "prettier-eslint": "16.x"
   },
+  "description": "Common eslint config used in node, mostly for Dzuelu projects but use it if it helps ya!",
   "devDependencies": {
     "@types/eslint": "8.x",
     "@types/jest": "29.x",
@@ -33,12 +33,11 @@
   "license": "MIT",
   "main": "dist/index.js",
   "name": "dzuelu-eslint-config",
-  "description": "Common eslint config used in node, mostly for Dzuelu projects but use it if it helps ya!",
   "private": false,
   "repository": "git@github.com:Dzuelu/discord-bot.git",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "lint": "ts-eslint-cli . --ext .ts"
+    "lint": "eslint . --ext .ts"
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
