@@ -1,8 +1,8 @@
 {
   "author": "Dzuelu <Dzuelu@users.noreply.github.com>",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "6.x",
-    "@typescript-eslint/parser": "6.x",
+    "@typescript-eslint/eslint-plugin": "7.x",
+    "@typescript-eslint/parser": "7.x",
     "eslint": "8.x",
     "eslint-config-airbnb-typescript": "17.x",
     "eslint-config-prettier": "9.x",
@@ -22,7 +22,7 @@
     "@types/node": "18.x",
     "jest": "29.x",
     "rimraf": "5.x",
-    "typescript": "5.2.x"
+    "typescript": "5.4.x"
   },
   "engines": {
     "node": ">=18"
@@ -34,10 +34,10 @@
   "main": "dist/index.js",
   "name": "dzuelu-eslint-config",
   "private": false,
-  "repository": "git@github.com:Dzuelu/discord-bot.git",
+  "repository": "git@github.com:Dzuelu/eslint-config.git",
   "scripts": {
     "build": "rimraf dist && tsc",
     "lint": "eslint . --ext .ts"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
