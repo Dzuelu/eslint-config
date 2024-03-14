@@ -1,24 +1,14 @@
 # eslint-config
 A lint config that can be used in other projects as simply as possible
 
-## Adding to repo
-Example with `ts-eslint-cli` plugin.
-```
-yarn add --dev ts-eslint-cli @dzuelu/eslint-config
-```
-
-Create a `.eslintrc.ts` file with the following
+Create a `.eslintrc.js` file with the following
 ```typescript
-import { ESLint } from 'eslint';
+const defaultLint = require('dzuelu-eslint-config');
 
-const config: ESLint.ConfigData = {
-  extends: ['@dzuelu']
-};
-
-export default config;
+module.exports = defaultLint;
 ```
 
 And add the following to package.json scripts
 ```
-"lint": "ts-eslint-cli . --ext .ts"
+"lint": "eslint . --ext .ts"
 ```
