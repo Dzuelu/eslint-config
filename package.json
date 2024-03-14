@@ -34,7 +34,7 @@
   "main": "dist/index.js",
   "name": "dzuelu-eslint-config",
   "private": false,
-  "repository": "git@github.com:Dzuelu/discord-bot.git",
+  "repository": "git@github.com:Dzuelu/eslint-config.git",
   "scripts": {
     "build": "rimraf dist && tsc",
     "lint": "eslint . --ext .ts"
